@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_user_review">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_user_details">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:padding="8dp"
+        android:src="@mipmap/person_avatar"
+        android:id="@+id/iv_user_profile_image" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rl_user_info">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+        android:id="@+id/ll_user_info_">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Wei Cong"
+            style="@style/BodySubHeading"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_name_text" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Singapore"
+            style="@style/BodySnippet"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_country_text" />
+    </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>
+    <TextView
+        android:padding="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="I had such an awesome experience at this place!"
+        android:id="@+id/tv_user_comment" />
+    </LinearLayout>

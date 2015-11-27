@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SkyAce</string>
+    <string name="title_activity_maps">SkyAce</string>
+    <string name="txt_snap_photo">Snap Photo</string>
+    <string name="txt_record_location">Record Location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_id">908335272594524</string>
+    <!--<string name="app_id">1647722692128099</string>-->
+
+    <string name="logout">Logout</string>
+    <string name="et_write_review">Write a review</string>
+
+</resources>

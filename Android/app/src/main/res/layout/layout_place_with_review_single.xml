@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_single_review"
+    android:background="@drawable/layer_border_bottom">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_user">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="8dp"
+            android:src="@mipmap/person_avatar"
+            android:id="@+id/img_profile_image" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rl_profile_text">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="4dp"
+                android:id="@+id/ll_user_text">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wei Cong reviewed Singapore Airlines"
+                    style="@style/BodySubHeading"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tv_review_title" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Singapore"
+                    style="@style/BodySnippet"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tv_location" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/ivPlaceImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_lock_idle_alarm"/>
+        <TextView
+            android:id="@+id/tvPlaceName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Singapore Airlines"
+            android:textColor="@android:color/white"
+
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llPlaceTags">
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="food"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            style="@style/BodySnippet"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="resturant"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            style="@style/BodySnippet"
+            android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+</LinearLayout>

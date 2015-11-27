@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit_onboard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Welcome to SkyAce"
+               android:gravity="center"
+               style="@style/BodyTitle"/>-->
+            <ImageView
+                android:id="@+id/ivAvatarImage"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:src="@mipmap/person_avatar" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivAvatarImage"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:hint="Your Name" />
+
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="12dp"
+                android:entries="@array/country_list"></Spinner>
+
+            <TextView
+                android:id="@+id/tvInterestHeading"
+                style="@style/BodySubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spCountry"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="36dp"
+                android:text="Your Interests" />
+
+            <LinearLayout
+                android:id="@+id/llTagsParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInterestHeading"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.wefika.flowlayout.FlowLayout
+                    android:id="@+id/llTags"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center"></com.wefika.flowlayout.FlowLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNewInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llTagsParent"
+                android:layout_centerInParent="true"
+                android:text="Add Interests" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_onboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:text="Submit" />
+
+</RelativeLayout>

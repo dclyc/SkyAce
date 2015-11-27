@@ -1,0 +1,29 @@
+{
+  "name": "NodejsStarterApp",
+  "version": "0.0.1",
+  "description": "A sample nodejs app for Bluemix",
+  "scripts": {
+    "start": "coffee app.coffee --clearTag"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "cfenv": "1.0.x",
+    "cloudinary": "^1.2.5",
+    "coffee-script": "^1.10.0",
+    "connect-busboy": "0.0.2",
+    "express": "4.12.x",
+    "follow-redirects": "0.0.7",
+    "fs": "0.0.2",
+    "moment": "^2.10.6",
+    "mongodb": "2.0.44",
+    "multer": "^1.1.0",
+    "multiparty": "^4.1.2",
+    "node-uuid": "^1.4.3",
+    "q": "^1.4.1",
+    "request": "^2.64.0"
+  },
+  "repository": {},
+  "engines": {
+    "node": "0.12.x"
+  }
+}

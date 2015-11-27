@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_Map"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        tools:context=".MapsActivity"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+
+    <!-- <ImageButton
+        android:id="@+id/record_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_record_location"
+        android:src="@mipmap/rating"
+        android:background="@null"
+        android:layout_marginLeft="32dp"
+        android:contentDescription="@string/txt_record_location"/>-->
+
+
+    <ImageButton
+        android:id="@+id/snap_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_snap_photo"
+        android:src="@mipmap/camera"
+        android:background="@null"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/txt_snap_photo"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
